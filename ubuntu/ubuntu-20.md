@@ -20,12 +20,13 @@ wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add
 sudo apt-add-repository "deb https://download.sublimetext.com/ apt/stable/"
 sudo apt install sublime-text
 # copy the sublime preferences in this repo 
+# copy the sublime keymap preferences in this repo
 ```
 
 # bash
 ```sh
-# copy the <repo>/bash/.bash_aliases to:
-cp <repo>/bash/.bash_aliases ~/
+# copy the <repo>/ubuntu/bash/.bash_aliases to:
+cp <repo>/ubuntu/bash/.bash_aliases ~/
 ```
 
 # Pip, pip3
@@ -146,8 +147,8 @@ sudo snap install pycharm-community --classic
 # tmux
 ```sh
 sudo apt-get install tmux
-# copy the <repo>/tmux/.tmux.conf to:
-cp <repo>/tmux/.tmux.conf ~
+# copy the <repo>/ubuntu/tmux/.tmux.conf to:
+cp <repo>/ubuntu/tmux/.tmux.conf ~
 ```
 
 # dock
