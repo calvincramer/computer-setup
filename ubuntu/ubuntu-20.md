@@ -131,6 +131,64 @@ sudo apt-get install meld
 git config --global merge.tool meld
 ```
 
+# pycharm
+```sh
+sudo snap install pycharm-community --classic
+```
+
+# dock
+
+* files
+* firefox
+* terminal
+* sublime 
+* atom
+* pycharm
+
+
+# terminal settings
+
+* Profiles
+    * Scrolling 
+        * limit scrollback to 99999
+    * Colors
+        * Unclick use colors from system theme
+        * use transparent background -> a little
+        * built-in schemes -> Solarized dark
+        * Palette -> built-in schemes -> Solarized
+
+Colors
+```
+Default color Text: #839496 -> #BFDADE
+Default color Background: #002B36 -> #0C262C
+```
+
+Palette
+```
+From palette entry 0 to 15
+#   Original    Set to
+==========================
+0   #073642     -
+1   #DC322F     -
+2   #859900     #5DB016
+3   #B58900     #DF7C07
+==========================
+4   #268BD2     -
+5   #D33682     -
+6   #2AA198     #924FC6
+7   #EEE8D5     -
+==========================
+8   #002B36     -
+9   #CB4B16     -
+10  #586E75     -
+11  #657B83     -
+==========================
+12  #839496     -
+13  #6C71C4     -
+14  #93A1A1     -
+15  #FDF6E3     -
+```
+
 # Etc
 ```sh
 # sudo apt-get install nfs-kernel-server      # NFS
