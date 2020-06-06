@@ -143,6 +143,13 @@ git config --global merge.tool meld
 sudo snap install pycharm-community --classic
 ```
 
+# tmux
+```sh
+sudo apt-get install tmux
+# copy the <repo>/tmux/.tmux.conf to:
+cp <repo>/tmux/.tmux.conf ~
+```
+
 # dock
 
 * files
@@ -208,7 +215,6 @@ sudo apt install net-tools                  # netstat
 # sudo apt-get install csh                    # For ?
 sudo apt-get install xclip                  # Useful tool
 sudo apt install tree                       # Useful tool
-sudo apt-get install tmux                   # Useful tool
 sudo apt install git-all                    # In case you don't have git? (Very large download)
 # sudo apt-get install cmake
 ```
