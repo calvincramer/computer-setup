@@ -103,6 +103,13 @@ sudo apt-get install arc-theme
 # sudo apt-get install arc-icons
 ```
 
+# jupyter notebook
+```sh
+sudo pip3 install --upgrade pip
+# sudo apt install python3-pip python3-dev
+sudo pip3 install jupyter
+```
+
 # Qemu 4.2 (probably don't need normally)
 ```sh
 wget https://download.qemu.org/qemu-5.0.0-rc0.tar.xz
