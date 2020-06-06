@@ -1,0 +1,19 @@
+[
+	// Unbind Quit command
+	{ "keys": ["super+q"], "command": "noop" },
+	{ "keys": ["ctrl+q"], "command": "noop" },
+
+	// Change record macro command
+	{ "keys": ["ctrl+alt+q"], "command": "noop" },
+	{ "keys": ["ctrl+alt+shift+q"], "command": "noop" },
+	{ "keys": ["ctrl+q"], "command": "toggle_record_macro" },
+	{ "keys": ["ctrl+shift+q"], "command": "run_macro" },
+
+	// Multiple carets
+	{ "keys": ["super+alt+up"], "command": "select_lines", "args": {"forward": false} },
+	{ "keys": ["super+alt+down"], "command": "select_lines", "args": {"forward": true} },
+
+	// Cycle tabs in order
+	{ "keys": ["ctrl+tab"], "command": "next_view" },
+	{ "keys": ["ctrl+shift+tab"], "command": "prev_view" },
+]
