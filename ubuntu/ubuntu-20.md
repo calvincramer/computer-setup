@@ -1,19 +1,36 @@
+# Ubuntu 20 minimal software install
+```sh
+sudo apt install git
+```
+
 # update
 ```sh
 sudo apt-get update
 sudo apt-get upgrade
 ```
 
+# ubuntu settings
+
+* Appearance -> Auto-hide dock
+
+
 # Sublime
 ```sh
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
 sudo apt-add-repository "deb https://download.sublimetext.com/ apt/stable/"
 sudo apt install sublime-text
+# copy the sublime preferences in this repo 
+```
+
+# bash
+```sh
+# copy the <repo>/bash/.bash_aliases to:
+cp <repo>/bash/.bash_aliases ~/
 ```
 
 # Pip, pip3
 ```sh
-sudo apt install python-pip
+sudo apt install python-pip     # ubuntu 20 doesn't ship with python 2, won't find this package
 sudo apt install python3-pip
 ```
 
@@ -33,7 +50,7 @@ sudo gdebi atom-amd64.deb
 rm atom-amd64.deb
 ```
 
-# firefox (uninstall, install)
+# firefox (uninstall, install) (if want to get more recent version of firefox)
 ```sh
 # uninstall
 sudo apt-get purge firefox
@@ -52,12 +69,26 @@ sudo apt upgrade
     firefox -> about:config in search bar
     search widget.content.gtk-theme-override
     add name of theme here
-    rester firefox
+    restart firefox
+```
+
+## firefox disable gtk theme
+```sh
+search "about:config" in firefox search bar
+enter widget.content.gtk-theme-override
+enter "Arc" as string value
+restart firefox
 ```
 
 # gnome-tweaks
 ```sh
 sudo apt install gnome-tweaks
+
+# General
+# animations -> off
+
+# Appearance
+# Applications -> Yaru-dark
 ```
 
 ## Add ARC theme
@@ -72,7 +103,7 @@ sudo apt-get install arc-theme
 # sudo apt-get install arc-icons
 ```
 
-# Qemu 4.2
+# Qemu 4.2 (probably don't need normally)
 ```sh
 wget https://download.qemu.org/qemu-5.0.0-rc0.tar.xz
 tar xvJf qemu-5.0.0-rc0.tar.xz
@@ -102,21 +133,17 @@ git config --global merge.tool meld
 
 # Etc
 ```sh
-sudo apt install libcanberra-gtk-module libcanberra-gtk3-module     # Fix workbench / simics-eclipse `sudo apt install libcanberra-gtk-module libcanberra-gtk3-module` "error"
-sudo apt-get install nfs-kernel-server      # NFS
-sudo apt-get install expect                 # expect (needed for boost testing)
+# sudo apt-get install nfs-kernel-server      # NFS
+# sudo apt-get install expect
 sudo apt install net-tools                  # netstat
-sudo apt install java-common                # Code collaborator
-sudo apt install openjdk-8-jdk              # Code collaborator
-sudo apt-get install xterm                  # For simics
-sudo apt-get install xinetd tftpd tftp      # For booting boards
-sudo apt-get install csh                    # For ?
-sudo aptitude install xclip                 # Useful tool
+# sudo apt install java-common                # Code collaborator
+# sudo apt install openjdk-8-jdk              # Code collaborator
+# sudo apt-get install xterm                  # For simics
+# sudo apt-get install xinetd tftpd tftp      # For booting boards
+# sudo apt-get install csh                    # For ?
+sudo apt-get install xclip                  # Useful tool
 sudo apt install tree                       # Useful tool
 sudo apt-get install tmux                   # Useful tool
-sudo apt install git-all                    # In case you don't have git?
-sudo apt-get install libstdc++6:i386 libgtk2.0-0:i386 libxtst6:i386         # For vx7
-sudo apt-get install gtk2-engines-murrine:i386 libcanberra-gtk-module:i386 unity-gtk2-module:i386 libatk-adaptor:i386   # for vx7
-sudo apt-get install cmake
-
+sudo apt install git-all                    # In case you don't have git? (Very large download)
+# sudo apt-get install cmake
 ```
