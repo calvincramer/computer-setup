@@ -35,6 +35,11 @@ sudo apt install python-pip     # ubuntu 20 doesn't ship with python 2, won't fi
 sudo apt install python3-pip
 ```
 
+# gimp (preinstalled if chose to include more software during installation)
+```sh
+sudo apt install gimp
+```
+
 
 # powerline (for tmux, bash)
 ```sh
@@ -90,6 +95,9 @@ sudo apt install gnome-tweaks
 
 # Appearance
 # Applications -> Yaru-dark
+
+# Workspaces
+# workspaces span multiple displays
 ```
 
 ## Add ARC theme
@@ -159,6 +167,7 @@ cp <repo>/ubuntu/tmux/.tmux.conf ~
 * sublime 
 * atom
 * pycharm
+* gimp
 
 
 # terminal settings
