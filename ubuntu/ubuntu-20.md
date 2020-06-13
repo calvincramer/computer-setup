@@ -159,6 +159,12 @@ sudo apt-get install tmux
 cp <repo>/ubuntu/tmux/.tmux.conf ~
 ```
 
+# vlc - media player
+```sh
+sudo apt install vlc 
+sudo apt install vlc-plugin-access-extra libbluray-bdj libdvdcss2
+```
+
 # dock
 
 * files
@@ -218,6 +224,7 @@ From palette entry 0 to 15
 # sudo apt-get install nfs-kernel-server      # NFS
 # sudo apt-get install expect
 sudo apt install net-tools                  # netstat
+sudo apt install curl                       # curl
 # sudo apt install java-common                # Code collaborator
 # sudo apt install openjdk-8-jdk              # Code collaborator
 # sudo apt-get install xterm                  # For simics
