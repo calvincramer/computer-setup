@@ -34,6 +34,7 @@ sudo snap install pycharm-community --classic   # pycharm
 snap install spotify                            # spotify
 sudo apt-get install tmux                       # tmux
 cp <repo>/ubuntu/tmux/.tmux.conf ~              # tmux config
+sudo apt install libreoffice                    # Libre office
 ```
 
 
