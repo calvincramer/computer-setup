@@ -23,21 +23,17 @@ sudo apt install sublime-text
 # copy the sublime keymap preferences in this repo
 ```
 
-# bash
+# Common, easy one-line installs:
 ```sh
-# copy the <repo>/ubuntu/bash/.bash_aliases to:
-cp <repo>/ubuntu/bash/.bash_aliases ~/
-```
-
-# Pip, pip3
-```sh
-sudo apt install python-pip     # ubuntu 20 doesn't ship with python 2, won't find this package
-sudo apt install python3-pip
-```
-
-# gimp (preinstalled if chose to include more software during installation)
-```sh
-sudo apt install gimp
+cp <repo>/ubuntu/bash/.bash_aliases ~/          # bash aliases
+sudo apt install python-pip                     # pip2 ubuntu 20 doesn't ship with python 2, won't find this package
+sudo apt install python3-pip                    # pip3
+sudo apt install gimp                           # gimp
+sudo pip3 install jupyter                       # jupyter notebook
+sudo snap install pycharm-community --classic   # pycharm
+snap install spotify                            # spotify
+sudo apt-get install tmux                       # tmux
+cp <repo>/ubuntu/tmux/.tmux.conf ~              # tmux config
 ```
 
 
@@ -112,13 +108,6 @@ sudo apt-get install arc-theme
 # sudo apt-get install arc-icons
 ```
 
-# jupyter notebook
-```sh
-sudo pip3 install --upgrade pip
-# sudo apt install python3-pip python3-dev
-sudo pip3 install jupyter
-```
-
 # Qemu 4.2 (probably don't need normally)
 ```sh
 wget https://download.qemu.org/qemu-5.0.0-rc0.tar.xz
@@ -145,18 +134,6 @@ gsettings set org.gnome.desktop.session idle-delay $((60*60))
 ```sh
 sudo apt-get install meld
 git config --global merge.tool meld
-```
-
-# pycharm
-```sh
-sudo snap install pycharm-community --classic
-```
-
-# tmux
-```sh
-sudo apt-get install tmux
-# copy the <repo>/ubuntu/tmux/.tmux.conf to:
-cp <repo>/ubuntu/tmux/.tmux.conf ~
 ```
 
 # vlc - media player
