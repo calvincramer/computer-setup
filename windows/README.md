@@ -3,3 +3,11 @@
 * firefox
 * 1password
 * gimp
+
+## Video editing software:
+
+* 
+
+### Bad:
+
+* OpenShot (no)
