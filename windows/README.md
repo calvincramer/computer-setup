@@ -3,6 +3,9 @@
 * firefox
 * 1password
 * gimp
+* sublime text
+* windirstat
+* cmder
 
 ## Video editing software:
 
