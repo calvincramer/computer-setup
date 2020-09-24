@@ -30,7 +30,7 @@ cp "sublime3/Default (Linux).sublime-keymap" ~.config/sublime-text-3/Packages/Us
 # ubuntu settings
 
 * Appearance -> Auto-hide dock
-
+* Sounds -> Volume Levels -> System Sounds -> Mute (no bell noise)
 
 # Common, easy installs:
 ```sh
