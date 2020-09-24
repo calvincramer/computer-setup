@@ -1,5 +1,5 @@
 [
-	// Unbind Quit command
+	// Unbind Quit command (linux specific)
 	{ "keys": ["super+q"], "command": "noop" },
 	{ "keys": ["ctrl+q"], "command": "noop" },
 
@@ -17,3 +17,4 @@
 	{ "keys": ["ctrl+tab"], "command": "next_view" },
 	{ "keys": ["ctrl+shift+tab"], "command": "prev_view" },
 ]
+
