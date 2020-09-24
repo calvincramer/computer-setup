@@ -35,6 +35,7 @@ snap install spotify                            # spotify
 sudo apt-get install tmux                       # tmux
 cp <repo>/ubuntu/tmux/.tmux.conf ~              # tmux config
 sudo apt install libreoffice                    # Libre office
+sudo apt-get install inkscape			# Inkscape
 ```
 
 
@@ -212,4 +213,7 @@ sudo apt-get install xclip                  # Useful tool
 sudo apt install tree                       # Useful tool
 sudo apt install git-all                    # In case you don't have git? (Very large download)
 # sudo apt-get install cmake
+
 ```
+
+# Chrome
