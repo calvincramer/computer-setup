@@ -51,6 +51,12 @@ sudo pip3 install jupyter
 
 # pycharm
 sudo snap install pycharm-community --classic
+# pycharm options:
+# Settings -> Keymap
+#   Toggle full screen mode -> F11
+#   Run                     -> F6
+#   Debug                   -> Shift + F6
+
 
 # spotify
 sudo snap install spotify
@@ -197,6 +203,7 @@ git config --global merge.tool meld
 * files
 * firefox
 * chrome
+* system monitor
 * terminal
 * sublime
 * atom
