@@ -56,6 +56,8 @@ sudo snap install pycharm-community --classic
 #   Toggle full screen mode -> F11
 #   Run                     -> F6
 #   Debug                   -> Shift + F6
+# Settings -> Editor -> General
+#   Change font size with Ctrl+Mouse Wheel (true)
 
 
 # spotify
