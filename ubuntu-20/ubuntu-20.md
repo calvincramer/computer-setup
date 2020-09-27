@@ -108,6 +108,11 @@ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo gdebi google-chrome-stable_current_amd64.deb
 google-chrome   # test
 rm google-chrome-stable_current_amd64.deb
+
+# audacity audio editor
+sudo add-apt-repository ppa:ubuntuhandbook1/audacity
+sudo apt update
+sudo apt install audacity
 ```
 
 
