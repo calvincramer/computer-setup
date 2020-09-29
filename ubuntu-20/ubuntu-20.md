@@ -87,6 +87,9 @@ rm atom-amd64.deb
 # Edit -> Preferences -> Install
 #   * wordcount
 #   * teletype
+# atom preferences
+# Editor
+#     * Tab Length -> 4
 
 
 # Typora - markdown editor
