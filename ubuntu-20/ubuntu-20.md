@@ -57,9 +57,13 @@ sudo snap install pycharm-community --classic
 #   Run                     -> F6
 #   Debug                   -> Shift + F6
 #   Refector -> Rename...   -> ctrl + r
+#   Editor Tabs -> Select Next Tab -> ctrl + tab
+#   Editor Tabs -> Select Previous Tab -> shift + ctrl + tab
+
 # Settings -> Editor -> General
 #   Change font size with Ctrl+Mouse Wheel (true)
-
+# Settings -> Editor -> Editor Tabs
+#   Mark modified -> true
 
 # spotify
 sudo snap install spotify
