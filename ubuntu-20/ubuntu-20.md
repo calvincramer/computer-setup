@@ -53,10 +53,13 @@ sudo pip3 install jupyter
 sudo snap install pycharm-community --classic
 # pycharm options:
 # Settings -> Keymap
-#   Toggle full screen mode -> F11
-#   Run                     -> F6
-#   Debug                   -> Shift + F6
-#   Refector -> Rename...   -> ctrl + r
+#   Toggle Presentation mode     -> F9
+#   Toggle Distraction Tree mode -> F10
+#   Toggle full screen mode      -> F11
+#   Toggle Zen mode              -> F12
+#   Run                          -> F6
+#   Debug                        -> Shift + F6
+#   Refector -> Rename...        -> ctrl + r
 #   Editor Tabs -> Select Next Tab -> ctrl + tab
 #   Editor Tabs -> Select Previous Tab -> shift + ctrl + tab
 
@@ -64,6 +67,7 @@ sudo snap install pycharm-community --classic
 #   Change font size with Ctrl+Mouse Wheel (true)
 # Settings -> Editor -> Editor Tabs
 #   Mark modified -> true
+#   Tab limit -> 100
 
 # spotify
 sudo snap install spotify
