@@ -18,8 +18,3 @@
 * [WSL2](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
 	* plus windows terminal
 * [zoom](https://zoom.us/download)
-
-
-### Bad:
-
-* OpenShot (no)
