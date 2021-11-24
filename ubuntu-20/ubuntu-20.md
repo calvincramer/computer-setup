@@ -249,7 +249,7 @@ git config --global merge.tool meld
 
 Colors
 ```
-Default color Text: #839496 -> #BFDADE
+Default color Text: #839496 -> #D5E3E6
 Default color Background: #002B36 -> #0C262C
 ```
 
