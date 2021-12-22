@@ -1,22 +1,25 @@
 # Obsidian settings
 
-Editor
-	Spell check -> on
-	Readable line length -> off
-	Fold heading -> on
-	Fold indent -> on
-	Show Line numbers -> on
-	Use tabs -> off
-Files & Links
-	Automatically update internal links -> on
-Core Plugins
-	Outgoing Links -> on
-	Templates -> on
-	Starred -> on
-	Slides -> on
-Appearance -> Themes -> Manage
-	Choose "Obsidian Nord"
-	Edit the `.obsidian/themes/"Obsidian Nord.css"` file:
+Editor:
+* Readable line length -> off
+* Fold heading -> on
+* Fold indent -> on
+* Show Line numbers -> on
+* Spell check -> on
+* Use tabs -> off
+
+Files & Links:
+* Automatically update internal links -> on
+
+Core Plugins:
+* Outgoing Links -> on
+* Templates -> on
+* Starred -> on
+* Slides -> on
+
+Appearance -> Themes -> Manage:
+* Choose "Obsidian Nord"
+* Edit the `.obsidian/themes/"Obsidian Nord.css"` file:
 ```sh
 # Replace markdown-source-view tag with:
 .markdown-source-view { font-family: 'Consolas', monospace; }
