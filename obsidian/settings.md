@@ -10,6 +10,7 @@ Editor:
 
 Files & Links:
 * Automatically update internal links -> on
+* Default location for new notes -> Same folder as current file
 
 Core Plugins:
 * Outgoing Links -> on
