@@ -38,3 +38,6 @@ Appearance -> Themes -> Manage:
     --green:  #a3be8c; -> #98C96F
     --purple: #b48ead; -> #C981BC
 ```
+
+# Hotkeys
+* Command palette: Open command palette: Ctlr + /
