@@ -1,20 +1,20 @@
-* Assumed to be in this directory: `<thisrepo>/ubuntu-20`
+These commands should be ran in: `<thisrepo>/ubuntu-20`
 
 
-# Ubuntu 20 minimal software install
+# Git (not included in Ubuntu minimal installation)
 ```sh
 sudo apt install git        # Actually needed
 git config --global user.email "calvincramer@gmail.com"
 git config --global user.name "calvincramer"
 ```
 
-# update
+# Update
 ```sh
 sudo apt-get update
 sudo apt-get upgrade
 ```
 
-# Sublime
+# Sublime Text
 ```sh
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
 sudo apt-add-repository "deb https://download.sublimetext.com/ apt/stable/"
@@ -27,10 +27,11 @@ cp sublime3/Preferences.sublime-settings ~.config/sublime-text-3/Packages/User/P
 cp "sublime3/Default (Linux).sublime-keymap" ~.config/sublime-text-3/Packages/User/"Default (Linux).sublime-keymap"
 ```
 
-# ubuntu settings
 
+# Ubuntu settings
 * Appearance -> Auto-hide dock
 * Sounds -> Volume Levels -> System Sounds -> Mute (no bell noise)
+
 
 # Common, easy installs:
 ```sh
@@ -48,6 +49,11 @@ sudo apt install gimp
 
 # jupyter notebook
 sudo pip3 install jupyter
+
+# black python formatter
+python3.7 -m pip install black
+# Add this to bash alias:
+alias my-black-3.7='black --target-version py37 --line-length 120'
 
 # pycharm
 sudo snap install pycharm-community --classic
@@ -127,7 +133,7 @@ sudo apt install audacity
 ```
 
 
-# firefox (uninstall, install) (if want to get more recent version of firefox)
+# Firefox (uninstall, install) (if want to get more recent version of firefox)
 ```sh
 # uninstall
 sudo apt-get purge firefox
@@ -207,7 +213,7 @@ gnome-tweaks
 ```
 
 
-# Qemu 4.2 (probably don't need normally)
+# Qemu from source (probably don't need normally)
 ```sh
 wget https://download.qemu.org/qemu-5.0.0-rc0.tar.xz
 tar xvJf qemu-5.0.0-rc0.tar.xz
@@ -222,7 +228,7 @@ sudo apt-get install meld
 git config --global merge.tool meld
 ```
 
-# dock
+# Icons on Dock
 
 * files
 * firefox
@@ -236,8 +242,7 @@ git config --global merge.tool meld
 * inkscape
 
 
-# terminal settings
-
+# Terminal settings
 * Profiles
     * Scrolling
         * limit scrollback to 99999
