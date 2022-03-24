@@ -78,10 +78,6 @@ sudo snap install pycharm-community --classic
 # spotify
 sudo snap install spotify
 
-# tmux
-sudo apt-get install tmux
-cp tmux/.tmux.conf ~
-
 # Libre office
 sudo apt install libreoffice
 
@@ -342,4 +338,31 @@ Terminal=false" > /usr/share/applications/obsidian.desktop
 
 update-desktop-database /usr/share/applications
 echo "install ok"
+```
+
+# Tmux
+## From package manager
+```sh
+sudo apt-get install tmux
+cp tmux/.tmux.conf ~
+````
+
+## From source
+Installing dependencies:
+```sh
+sudo apt-get install libevent-dev
+```
+
+Tmux build
+```sh
+cd /tmp
+mkdir build-tmux
+cd build-tmux
+git clone git@github.com:tmux/tmux.git
+cd tmux
+sh autogen.sh
+./configure
+# Only proceed if configure did not give errors
+make -j 12
+sudo make install
 ```
