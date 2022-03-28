@@ -350,14 +350,14 @@ thead
 .workspace-split.mod-left-split > .workspace-leaf-resize-handle,
 .workspace-split.mod-right-split > .workspace-leaf-resize-handle
 {
-    width: 1px !important;
+    width: 4px !important;
     background-color: var(--background-secondary-alt);
 }
 
 /* horizontal resize-handle */
 .workspace-split.mod-horizontal > * > .workspace-leaf-resize-handle
 {
-    height: 1px !important;
+    height: 4px !important;
     background-color: var(--background-secondary-alt);
 }
 
@@ -490,4 +490,14 @@ input.task-list-item-checkbox:checked {
 }
 .setting-item-control input[type="text"]::placeholder {
     color: var(--dark3);
+}
+
+/* Disable scroll bar background: */
+body:not(.native-scrollbars) ::-webkit-scrollbar {
+   background-color: transparent;
+}
+
+/* Adjust scroll bar padding */
+.cm-s-obsidian, .markdown-preview-view {
+    padding-right: 8px !important;
 }
