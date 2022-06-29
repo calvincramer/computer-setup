@@ -21,10 +21,10 @@ sudo apt-add-repository "deb https://download.sublimetext.com/ apt/stable/"
 sudo apt install sublime-text
 
 # copy the sublime preferences in this repo
-cp sublime3/Preferences.sublime-settings ~.config/sublime-text-3/Packages/User/Preferences.sublime-settings
+cp sublime/Preferences.sublime-settings ~/.config/sublime-text/Packages/User/Preferences.sublime-settings
 
 # copy the sublime keymap preferences in this repo
-cp "sublime3/Default (Linux).sublime-keymap" ~.config/sublime-text-3/Packages/User/"Default (Linux).sublime-keymap"
+cp "sublime/Default (Linux).sublime-keymap" ~/.config/sublime-text/Packages/User/"Default (Linux).sublime-keymap"
 ```
 
 
@@ -75,8 +75,11 @@ sudo snap install pycharm-community --classic
 #   Mark modified -> true
 #   Tab limit -> 100
 
-# spotify
-sudo snap install spotify
+# Spotify
+# sudo snap install spotify     # Fuck snap
+curl -sS https://download.spotify.com/debian/pubkey_5E3C45D7B312C643.gpg | sudo apt-key add -
+echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
+
 
 # Libre office
 sudo apt install libreoffice
