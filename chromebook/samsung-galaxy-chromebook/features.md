@@ -1,4 +1,10 @@
 # Features for Samsung Galaxy Notebook
+- Model Number (for mine): `XE930QCA`
+- hardware ID: `KOHAKU-JPZQ C5B-B4B-B4V-H9A-A3T`
+	- `KOHAKU`
+- CPU: core i5-10210U (8 core)
+- RAM: 8 GB
+- disk: 256 GB
 - Screen
 	- 4k 3840 x 2160
 	- 60 hz
@@ -6,18 +12,33 @@
 		- click
 		- drag
 		- zoom two fingers
+	- adjustable brightness by keys
 - keyboard keys
-- fingerprint sensor
+- keyboard backlight (adjustable)
+- fingerprint sensor: `Fingerprint Cards FPC1145`
 - trackpad
 	- movement
 	- single click press / no press
 	- double finger click (right click) press / no press
+- very quick wakeup
 - camera top of screen
 - camera on main body
-- microphone/s (?)
+- mono microphone by camera on keyboard
+- dual microphone on top edge of screen
 - headphone jack
-- left USB
+- left USB-C
+- right USB-C
 - volume up / down on left
 - speaker on left
 - speaker on right
-- things on right side TODO
+- micro SD card reader
+- LED light on right side
+- power / sleep button
+	- hold to show options for shutdown, sign out, and lock
+- galaxy pen
+	- can use as mouse pointer, click and drag
+- 360 hinge changes desktop to tablet modes
+- bluetooth
+- WiFi 6 802.11 ax
+- volume up / down / mute keys
+- ambient light sensor top right hole above keyboard
