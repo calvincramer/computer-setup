@@ -1,0 +1,23 @@
+# Features for Samsung Galaxy Notebook
+- Screen
+	- 4k 3840 x 2160
+	- 60 hz
+	- touchscreen
+		- click
+		- drag
+		- zoom two fingers
+- keyboard keys
+- fingerprint sensor
+- trackpad
+	- movement
+	- single click press / no press
+	- double finger click (right click) press / no press
+- camera top of screen
+- camera on main body
+- microphone/s (?)
+- headphone jack
+- left USB
+- volume up / down on left
+- speaker on left
+- speaker on right
+- things on right side TODO
