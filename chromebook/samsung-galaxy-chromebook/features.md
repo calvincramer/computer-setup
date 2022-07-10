@@ -20,14 +20,18 @@
 	- movement
 	- single click press / no press
 	- double finger click (right click) press / no press
+	- click one finger drag with another finger for dragging
 - very quick wakeup
 - camera top of screen
+- "Color Ambient Light Sensor" to the right of the camera on top of the screen
 - camera on main body
 - mono microphone by camera on keyboard
 - dual microphone on top edge of screen
 - headphone jack
 - left USB-C
+	- can charge the laptop
 - right USB-C
+	- can charge the laptop
 - volume up / down on left
 - speaker on left
 - speaker on right
