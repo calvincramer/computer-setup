@@ -372,3 +372,36 @@ sh autogen.sh
 make -j 12
 sudo make install
 ```
+
+# Zoom
+- download site is here: https://zoom.us/download?os=linux
+```sh
+sudo apt-get update
+sudo apt-get update
+sudo apt-get install libglib2.0-0 \
+                     libgstreamer-plugins-base0.10-0  \
+                     libxcb-shape0 \
+                     libxcb-shm0 \
+                     libxcb-xfixes0 \
+                     libxcb-randr0 \
+                     libxcb-image0 \
+                     libfontconfig1 \
+                     libgl1-mesa-dev \
+                     libgl1-mesa-glx \
+                     libxi6 \
+                     libsm6 \
+                     libxrender1 \
+                     libpulse0 \
+                     libxcomposite1 \
+                     libxslt1.1 \
+                     libsqlite3-0 \
+                     libxcb-keysyms1 \
+                     libxcb-xtest0 \
+                     ibus
+sudo apt --fix-broken install
+cd /tmp
+mkdir zm
+cd zm
+wget https://zoom.us/client/latest/zoom_amd64.deb
+sudo dpkg --install zoom_amd64.deb
+```
