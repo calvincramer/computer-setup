@@ -226,6 +226,23 @@ gnome-tweaks
 # sudo apt-get install arc-icons
 ```
 
+# Ubuntu 22 No multi-monitor no sticky edges
+- Mouse stops for a bit when trying to move to other monitor where the dock is
+- only a problem when auto hiding dock is enabled and when dock is not on bottom
+- fix by moving dock to bottom
+```sh
+# Did not work:
+sudo apt-get install compizconfig-settings-manager
+sudo ccsm
+# Snapping Windows -> Behavior -> Snap Type -> disable
+
+# Not applicable to Ubunutu 22
+# sudo apt-get install unity-tweak-tool
+
+# Did not work:
+gsettings set org.gnome.shell.overrides edge-tiling false
+```
+
 
 # Qemu from source (probably don't need normally)
 ```sh
