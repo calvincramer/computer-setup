@@ -437,3 +437,14 @@ cd zm
 wget https://zoom.us/client/latest/zoom_amd64.deb
 sudo dpkg --install zoom_amd64.deb
 ```
+
+# Visual Studio Code
+```sh
+sudo su
+curl -sSL https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor -o /usr/share/keyrings/vscode.gpg
+
+echo deb [arch=amd64 signed-by=/usr/share/keyrings/vscode.gpg] https://packages.microsoft.com/repos/vscode stable main | tee /etc/apt/sources.list.d/vscode.list
+apt update
+apt install code
+exit
+```
