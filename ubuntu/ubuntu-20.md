@@ -17,9 +17,11 @@ sudo apt-get upgrade
 # Sublime Text
 ```sh
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
-sudo apt-add-repository "deb https://download.sublimetext.com/ apt/stable/"
+echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
+#sudo apt-add-repository "deb https://download.sublimetext.com/ apt/stable/"
 sudo apt update
 sudo apt install sublime-text
+
 
 # copy the sublime preferences in this repo
 cp sublime/Preferences.sublime-settings ~/.config/sublime-text/Packages/User/Preferences.sublime-settings
@@ -27,6 +29,9 @@ cp sublime/Preferences.sublime-settings ~/.config/sublime-text/Packages/User/Pre
 # copy the sublime keymap preferences in this repo
 cp "sublime/Default (Linux).sublime-keymap" ~/.config/sublime-text/Packages/User/"Default (Linux).sublime-keymap"
 ```
+- In sublime text:
+    - ctrl+shift+p - UI: Select Theme - Default Dark
+    - ctrl+shift+p - Install Package Control
 
 
 # Ubuntu settings
