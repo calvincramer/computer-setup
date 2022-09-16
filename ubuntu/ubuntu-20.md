@@ -452,6 +452,9 @@ exit
 # NeoVim
 ```sh
 sudo apt-get install neovim nodejs
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
+# Open a new terminal
+nvm install v16
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 nvim
     :PlugInstall
