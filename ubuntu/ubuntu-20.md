@@ -495,3 +495,14 @@ rm ./kubectl
 curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
 sudo install -o root -g root -m 0755 minikube-linux-amd64 /usr/local/bin/minikube
 ```
+
+# yq
+```sh
+sudo wget -qO /usr/local/bin/yq https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64
+sudo chmod a+x /usr/local/bin/yq
+```
+
+# jq
+```sh
+sudo apt install jq
+````
