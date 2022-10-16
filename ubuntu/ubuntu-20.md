@@ -61,26 +61,6 @@ python3.7 -m pip install black
 # Add this to bash alias:
 alias my-black-3.7='black --target-version py37 --line-length 120'
 
-# pycharm
-sudo snap install pycharm-community --classic
-# pycharm options:
-# Settings -> Keymap
-#   Toggle Presentation mode     -> F9
-#   Toggle Distraction Tree mode -> F10
-#   Toggle full screen mode      -> F11
-#   Toggle Zen mode              -> F12
-#   Run                          -> F6
-#   Debug                        -> Shift + F6
-#   Refector -> Rename...        -> ctrl + r
-#   Editor Tabs -> Select Next Tab -> ctrl + tab
-#   Editor Tabs -> Select Previous Tab -> shift + ctrl + tab
-
-# Settings -> Editor -> General
-#   Change font size with Ctrl+Mouse Wheel (true)
-# Settings -> Editor -> Editor Tabs
-#   Mark modified -> true
-#   Tab limit -> 100
-
 # Spotify
 # sudo snap install spotify     # Fuck snap
 curl -sS https://download.spotify.com/debian/pubkey_5E3C45D7B312C643.gpg | sudo apt-key add -
@@ -506,3 +486,45 @@ sudo chmod a+x /usr/local/bin/yq
 ```sh
 sudo apt install jq
 ````
+
+# pycharm
+## Snap
+```sh
+sudo snap install pycharm-community --classic
+```
+
+## Binary
+```sh
+cd $(mktemp --directory)
+# Go here to get latest version, click download then see "direct link" link for latest URL
+#    https://www.jetbrains.com/pycharm/download/#section=linux
+wget -o pycharm.tar.gz https://download.jetbrains.com/python/pycharm-community-2022.2.3.tar.gz
+sudo mkdir -p /opt/pycharm
+sudo tar --directory /opt/pycharm -xf pycharm.tar.gz
+rm pycharm.tar.gz
+
+# Add this to aliases:
+alias pycharm='/opt/pycharm/pycharm-community-2022.2.3/bin/pycharm.sh'
+
+# TODO: keep on task bar
+# TODO: pycharm show up on search bar
+```
+
+## pycharm options:
+- Settings
+    - Keymap
+       - Toggle Presentation mode     -> F9
+       - Toggle Distraction Tree mode -> F10
+       - Toggle full screen mode      -> F11
+       - Toggle Zen mode              -> F12
+       - Run                          -> F6
+       - Debug                        -> Shift + F6
+       - Refector -> Rename...        -> ctrl + r
+       - Editor Tabs -> Select Next Tab -> ctrl + tab
+       - Editor Tabs -> Select Previous Tab -> shift + ctrl + tab
+    - Editor
+        - General
+            - Change font size with Ctrl+Mouse Wheel (true)
+        - Editor Tabs
+            - Mark modified -> true
+            - Tab limit -> 100
