@@ -525,6 +525,6 @@ alias pycharm='/opt/pycharm/pycharm-community-2022.2.3/bin/pycharm.sh'
     - Editor
         - General
             - Change font size with Ctrl+Mouse Wheel (true)
-        - Editor Tabs
-            - Mark modified -> true
-            - Tab limit -> 100
+            - Editor Tabs
+                - Mark modified -> true
+                - Tab limit -> 100
