@@ -528,3 +528,31 @@ alias pycharm='/opt/pycharm/pycharm-community-2022.2.3/bin/pycharm.sh'
             - Editor Tabs
                 - Mark modified -> true
                 - Tab limit -> 100
+ 
+# Rust
+```sh
+sudo apt install curl build-essential gcc make
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
+# Add the following to your bashrc or equivalent
+. "$HOME/.cargo/env"
+
+# Then check:
+source ~/.bashrc
+rustc -V
+```
+
+# Bat (better cat)
+```sh
+git clone --depth 1 --branch v0.22.1 git@github.com:sharkdp/bat.git
+cd bat
+cargo install --locked bat      # Need rust to build
+sudo cp ~/.cargo/bin/bat /usr/local/bin
+cd ..
+rm -rf bat
+
+# Add alias to override cat
+alias cat="bat"
+```
+
+
