@@ -489,6 +489,16 @@ sudo chmod a+x /usr/local/bin/yq
 sudo apt install jq
 ````
 
+# jqp - TODO
+- Requires golang
+```sh
+git clone git@github.com:noahgorstein/jqp.git
+cd jqp
+go build
+sudo mv ./jqp /usr/local/bin
+```
+
+
 # pycharm
 ## Snap
 ```sh
