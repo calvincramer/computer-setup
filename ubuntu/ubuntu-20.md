@@ -556,7 +556,7 @@ rustc -V
 
 # Bat (better cat)
 ```sh
-git clone --depth 1 --branch v0.22.1 git@github.com:sharkdp/bat.git
+git clone --depth 1 git@github.com:sharkdp/bat.git
 cd bat
 cargo install --locked bat      # Need rust to build
 sudo cp ~/.cargo/bin/bat /usr/local/bin
