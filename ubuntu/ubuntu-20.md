@@ -485,6 +485,7 @@ sudo install -o root -g root -m 0755 minikube-linux-amd64 /usr/local/bin/minikub
 
 # yq
 ```sh
+# Preinstalled
 sudo wget -qO /usr/local/bin/yq https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64
 sudo chmod a+x /usr/local/bin/yq
 ```
@@ -545,7 +546,7 @@ alias pycharm='/opt/pycharm/pycharm-community-2022.2.3/bin/pycharm.sh'
             - Editor Tabs
                 - Mark modified -> true
                 - Tab limit -> 100
- 
+
 # Rust
 ```sh
 sudo apt install curl build-essential gcc make
