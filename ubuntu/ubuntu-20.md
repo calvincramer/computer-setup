@@ -140,16 +140,12 @@ sudo apt upgrade
 ```sh
 sudo snap remove firefox
 sudo add-apt-repository ppa:mozillateam/ppa
-echo '
-Package: *
-Pin: release o=LP-PPA-mozillateam
-Pin-Priority: 1001
-' | sudo tee /etc/apt/preferences.d/mozilla-firefox
+echo -e '\nPackage: *\nPin: release o=LP-PPA-mozillateam\nPin-Priority: 1001\n' | sudo tee /etc/apt/preferences.d/mozilla-firefox
 echo 'Unattended-Upgrade::Allowed-Origins:: "LP-PPA-mozillateam:${distro_codename}";' | sudo tee /etc/apt/apt.conf.d/51unattended-upgrades-firefox
 sudo apt install firefox
 ````
 
-## firefox disable gtk theme
+## Firefox disable gtk theme
 ```sh
 search "about:config" in firefox search bar
 enter widget.content.gtk-theme-override
@@ -157,30 +153,23 @@ enter "Arc" as string value
 restart firefox
 ```
 
-## firefox customization
-
+## Firefox Customization
 * Add 1password
-
 * sign in to firefox
-
 * Customize
     * uncheck Title Bar
     * Toolbars -> Bookmarks toolbar
     * Themes -> Dark
-
 * Preferences
     * General
         * General
             * Restore previous session check
         * Tabs
             * uncheck ctrl+tab cycles through tabs in recently used order
-
     * Home
         * Just have web search and top sites
-
     * Search
         * add search in toolbar
-
     * Privacy & Security
         * uncheck all in Firefox Data Collection and Use
 
