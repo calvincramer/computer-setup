@@ -433,7 +433,12 @@ exit
 
 # NeoVim
 ```sh
-sudo apt-get install neovim nodejs
+# Install nvim
+# sudo apt-get install neovim nodejs   # nvim packages are old
+# Install from source: https://github.com/neovim/neovim/wiki/Building-Neovim
+# choose the stable branch
+
+# nvm / js for treesitter or other things, I forget
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
 # Open a new terminal
 nvm install v16
