@@ -505,7 +505,7 @@ sudo snap install pycharm-community --classic
 cd $(mktemp --directory)
 # Go here to get latest version, click download then see "direct link" link for latest URL
 #    https://www.jetbrains.com/pycharm/download/#section=linux
-wget -o pycharm.tar.gz https://download.jetbrains.com/python/pycharm-community-2022.2.3.tar.gz
+wget -O pycharm.tar.gz https://download.jetbrains.com/python/pycharm-community-2022.3.3.tar.gz
 sudo mkdir -p /opt/pycharm
 sudo tar --directory /opt/pycharm -xf pycharm.tar.gz
 rm pycharm.tar.gz
@@ -514,6 +514,23 @@ rm pycharm.tar.gz
 alias pycharm='/opt/pycharm/pycharm-community-2022.2.3/bin/pycharm.sh'
 
 # TODO: keep on task bar
+cat << EOF > ~/.local/share/applications/PyCharm.desktop
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Name=Pycharm
+# Only KDE 4 seems to use GenericName, so we reuse the KDE strings.
+# From Ubuntu's language-pack-kde-XX-base packages, version 9.04-20090413.
+GenericName=Python IDE
+Exec=/opt/pycharm/pycharm-community-2022.2.3/bin/pycharm.sh
+Terminal=false
+Icon=\"/opt/pycharm/pycharm-community-2022.2.3/bin/pycharm.png\"
+Type=Application
+Categories=TextEditor;IDE;Development
+X-Ayatana-Desktop-Shortcuts=NewWindow
+Icon[en_US]=/opt/pycharm/pycharm-community-2022.2.3/bin/pycharm.png"
+EOF
+
 # TODO: pycharm show up on search bar
 ```
 
