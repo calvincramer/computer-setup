@@ -268,7 +268,7 @@ Palette
 From palette entry 0 to 15
 #   Original    Set to
 ==========================
-0   #073642     -
+0   #073642     #0C87A6
 1   #DC322F     -
 2   #859900     #5DB016
 3   #B58900     #DF7C07
@@ -278,7 +278,7 @@ From palette entry 0 to 15
 6   #2AA198     #924FC6
 7   #EEE8D5     -
 ==========================
-8   #002B36     -
+8   #002B36     #395A63
 9   #CB4B16     -
 10  #586E75     -
 11  #657B83     -
@@ -482,9 +482,9 @@ sudo chmod a+x /usr/local/bin/yq
 # jq
 ```sh
 sudo apt install jq
-````
+```
 
-# jqp - TODO
+# jqp
 - Requires golang
 ```sh
 git clone git@github.com:noahgorstein/jqp.git
@@ -492,7 +492,6 @@ cd jqp
 go build
 sudo mv ./jqp /usr/local/bin
 ```
-
 
 # pycharm
 ## Snap
@@ -579,4 +578,16 @@ rm -rf bat
 alias cat="bat"
 ```
 
+# zsh
+```sh
+sudo apt install zsh
+sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
+# Add "zsh-autosuggestions" to plugin list ~/.zshrc:
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+
+chsh
+/bin/zsh
+```
