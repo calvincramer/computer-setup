@@ -409,7 +409,15 @@ cd /tmp
 rm -rf zm
 ```
 
-# Visual Studio Code
+# VSCodium
+```sh
+curl -fSsL https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg | sudo gpg --dearmor | sudo tee /usr/share/keyrings/vscodium.gpg > /dev/null
+echo "deb [signed-by=/usr/share/keyrings/vscodium.gpg] https://download.vscodium.com/debs vscodium main" | sudo tee /etc/apt/sources.list.d/vscodium.list
+sudo apt update
+sudo apt install codium -y
+```
+
+<!-- # Visual Studio Code
 ```sh
 sudo su
 curl -sSL https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor -o /usr/share/keyrings/vscode.gpg
@@ -418,7 +426,7 @@ echo deb [arch=amd64 signed-by=/usr/share/keyrings/vscode.gpg] https://packages.
 apt update
 apt install code
 exit
-```
+``` -->
 
 # NeoVim
 ```sh
@@ -592,6 +600,9 @@ plugins=(
     zsh-autosuggestions
     zsh-syntax-highlighting
     zsh-autocomplete
+    colored-man-pages
+    docker
+    golang
 )
 
 
