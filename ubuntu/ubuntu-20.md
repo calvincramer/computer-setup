@@ -417,7 +417,7 @@ sudo apt update
 sudo apt install codium -y
 ```
 
-<!-- # Visual Studio Code
+## Visual Studio Code
 ```sh
 sudo su
 curl -sSL https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor -o /usr/share/keyrings/vscode.gpg
@@ -426,7 +426,15 @@ echo deb [arch=amd64 signed-by=/usr/share/keyrings/vscode.gpg] https://packages.
 apt update
 apt install code
 exit
-``` -->
+```
+
+## Uninstall vscode
+```sh
+sudo apt purge code
+sudo apt autoremove
+sudo rm /usr/share/keyrings/vscode.gpg
+sudo rm /etc/apt/sources.list.d/vscode.list
+```
 
 # NeoVim
 ```sh
