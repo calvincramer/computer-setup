@@ -528,7 +528,12 @@ rm pycharm.tar.gz
 # Add this to aliases:
 alias pycharm='/opt/pycharm/pycharm-community-2022.2.3/bin/pycharm.sh'
 
-# TODO: keep on task bar
+# Run
+pycharm
+# Tools -> Create Desktop Entry
+```
+
+<!--
 cat << EOF > ~/.local/share/applications/PyCharm.desktop
 #!/usr/bin/env xdg-open
 [Desktop Entry]
@@ -545,9 +550,7 @@ Categories=TextEditor;IDE;Development
 X-Ayatana-Desktop-Shortcuts=NewWindow
 Icon[en_US]=/opt/pycharm/pycharm-community-2022.2.3/bin/pycharm.png"
 EOF
-
-# TODO: pycharm show up on search bar
-```
+-->
 
 ## pycharm options:
 - Settings
@@ -567,6 +570,22 @@ EOF
             - Editor Tabs
                 - Mark modified -> true
                 - Tab limit -> 100
+
+# IntelliJ
+- download: `https://www.jetbrains.com/idea/download/?section=linux`
+```sh
+cd ~/Downloads
+mkdir /tmp/z
+mv ideaIC-*.tar.gz idea.tar.gz
+mv idea.tar.gz /tmp/z
+cd /tmp/z
+tar -xzf idea-xxx.tar.gz
+sudo mv idea-IC-* /opt
+/opt/idea-IC-*/bin/idea.sh
+# Open a folder as a project
+# Tools -> Create Desktop Entry
+# Run 'IntelliJ' app with OS app launcher
+```
 
 # Rust
 ```sh
