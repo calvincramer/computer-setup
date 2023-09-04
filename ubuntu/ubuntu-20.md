@@ -417,7 +417,7 @@ sudo apt update
 sudo apt install codium -y
 ```
 
-## Visual Studio Code
+## vscode - Visual Studio Code
 ```sh
 sudo su
 curl -sSL https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor -o /usr/share/keyrings/vscode.gpg
