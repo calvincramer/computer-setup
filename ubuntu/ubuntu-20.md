@@ -345,6 +345,9 @@ exit
 update-desktop-database /usr/share/applications
 
 # Check worked by trying to run obsidian
+
+# Uninstall:
+sudo rm -rf /opt/obsidian
 ```
 
 # Tmux
