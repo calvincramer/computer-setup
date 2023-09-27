@@ -381,7 +381,7 @@ sudo make install
 - download site is here: https://zoom.us/download?os=linux
 ```sh
 sudo apt-get update
-sudo apt-get update
+sudo apt-get upgrade
 sudo apt-get install libglib2.0-0 \
                      libgstreamer-plugins-base0.10-0  \
                      libxcb-shape0 \
@@ -411,6 +411,11 @@ sudo dpkg --install zoom_amd64.deb
 cd /tmp
 rm -rf zm
 ```
+Uninstall:
+```sh
+sudp apt-get remove zoom
+```
+
 
 # VSCodium
 ```sh
