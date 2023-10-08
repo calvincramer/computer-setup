@@ -360,7 +360,7 @@ cp tmux/.tmux.conf ~
 ## From source
 Installing dependencies:
 ```sh
-sudo apt-get install libevent-dev
+sudo apt-get install libevent-dev automake bison libncurses-dev
 ```
 
 Tmux build
