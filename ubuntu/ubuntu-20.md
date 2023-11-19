@@ -316,7 +316,6 @@ sudo apt install git-all                        # In case you don't have git? (l
 ```sh
 sudo apt-get install fuse libfuse2
 
-icon_url="https://cdn.discordapp.com/icons/686053708261228577/1361e62fed2fee55c7885103c864e2a8.png"
 dl_url=$(curl -s https://api.github.com/repos/obsidianmd/obsidian-releases/releases/latest | grep "browser_download_url.*AppImage" | tail -n 1 | cut -d '"' -f 4)
 
 if [[ -z "$dl_url" ]]; then
@@ -325,11 +324,12 @@ if [[ -z "$dl_url" ]]; then
 fi
 
 curl --location --output Obsidian.AppImage "${dl_url}"
-curl --location --output obsidian.png "${icon_url}"
 
 sudo mkdir -p /opt/obsidian/
 sudo mv Obsidian.AppImage /opt/obsidian
 sudo chmod u+x /opt/obsidian/Obsidian.AppImage
+
+# Icon https://obsidian.md/blog/new-obsidian-icon/
 sudo mv obsidian.png /opt/obsidian
 sudo ln -s /opt/obsidian/obsidian.png /usr/share/pixmaps
 
@@ -342,7 +342,7 @@ Icon=obsidian
 Terminal=false" > /usr/share/applications/obsidian.desktop
 exit
 
-update-desktop-database /usr/share/applications
+sudo update-desktop-database /usr/share/applications
 
 # Check worked by trying to run obsidian
 
