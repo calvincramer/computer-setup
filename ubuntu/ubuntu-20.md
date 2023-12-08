@@ -320,7 +320,6 @@ dl_url=$(curl -s https://api.github.com/repos/obsidianmd/obsidian-releases/relea
 
 if [[ -z "$dl_url" ]]; then
     echo "missing download link"
-    exit 1
 fi
 
 curl --location --output Obsidian.AppImage "${dl_url}"
