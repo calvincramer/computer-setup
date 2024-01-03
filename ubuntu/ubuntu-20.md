@@ -412,7 +412,7 @@ rm -rf zm
 ```
 Uninstall:
 ```sh
-sudp apt-get remove zoom
+sudo apt-get remove zoom
 ```
 
 
