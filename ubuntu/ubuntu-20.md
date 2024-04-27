@@ -382,7 +382,6 @@ sudo make install
 sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get install libglib2.0-0 \
-                     libgstreamer-plugins-base0.10-0  \
                      libxcb-shape0 \
                      libxcb-shm0 \
                      libxcb-xfixes0 \
