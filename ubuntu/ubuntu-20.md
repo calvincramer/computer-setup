@@ -637,8 +637,13 @@ plugins=(
     docker
     golang
 )
-
-
 chsh
 /bin/zsh
+```
+
+
+# Typing Adjustments
+```sh
+gsettings set org.gnome.desktop.peripherals.keyboard repeat-interval 25     # ms
+gsettings set org.gnome.desktop.peripherals.keyboard delay 250  # ms
 ```
