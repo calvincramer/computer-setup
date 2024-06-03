@@ -641,9 +641,24 @@ chsh
 /bin/zsh
 ```
 
-
-# Typing Adjustments
+# Typing Speed Adjustments
 ```sh
 gsettings set org.gnome.desktop.peripherals.keyboard repeat-interval 25     # ms
 gsettings set org.gnome.desktop.peripherals.keyboard delay 250  # ms
+```
+
+# entr
+```sh
+git clone https://github.com/eradman/entr
+cd entr
+./configure
+make test
+sudo make install
+```
+
+# ctop
+```sh
+wget https://github.com/bcicen/ctop/releases/download/v0.7.7/ctop-0.7.7-linux-amd64 -O ctop
+chmod +x ctop
+sudo mv ctop /usr/local/bin/ctop
 ```
